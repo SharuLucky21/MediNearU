@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Bill Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body bgcolor="orchid">
+
+<div class="container">
+    <h2>Medicine Bill Payment</h2>
+    <form id="paymentForm">
+        <label for="medicine">Select Medicine:</label>
+        <select id="medicine" name="medicine">
+            <option value="paracetamol">Paracetamol - $5.00</option>
+            <option value="ibuprofen">Ibuprofen - $7.00</option>
+            <option value="aspirin">Aspirin - $4.50</option>
+        </select><br>
+         <br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required><br>
+         <br>
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" pattern="\d{16}" placeholder="16 digits" required><br>
+         <br> 
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="text" id="expiryDate" name="expiryDate" pattern="\d{2}/\d{2}" placeholder="MM/YY" required><br>
+         <br>
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" pattern="\d{3}" placeholder="3 digits" required><br>
+         <br>
+        <button> <a href = order.html>Pay Now</a></button><br>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
